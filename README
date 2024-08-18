@@ -1,0 +1,21 @@
+TRAVEL LANDING PAGE
+
+*Overview-*
+The Travel Landing Page is a simple website. This project is built using HTML, CSS.
+
+*Usage-*
+1) Open index.html in you web browser from floder where you have the download all files.
+2) Unzip the image folder for images in the same directory
+
+*Files-*
+1) index.html: The main HTML file (image used in this is also there as [img_name.extension]).
+2) style.css: The CSS file for styling the webpage.
+
+*Contributing-*
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+*License-*
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+*Acknowledgements-*
+Inspired by various online tutorials and resources on web development.
