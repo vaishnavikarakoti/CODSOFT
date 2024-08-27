@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header section-->
+    <header class="header">
+        <div>
+            <img class="logo" src="logo.png" alt="Logo">
+        </div>
+
+        <b> <p>
+            Welcome to Vaishnavi's Portfolio!!
+        </p> </b>
+
+        <ul class="menu">
+            <li id="touch" class="menus">Get in touch</li>
+        </ul>
+    </header>
+
+    <!--about me section-->
+    <section class="bio">
+        <div class="left">
+            <div>Hi, my name is <span id="purple">Vaishnavi Karakoti</span></div>
+
+            <p>Hello! I’m Vaishnavi Karakoti, a BCA student aspiring Full-Stack Developing. I’m passionate about creating dynamic and responsive websites.
+                I’ve developed a keen interest in integrating front-end and back-end technologies to build seamless user experiences.
+                I believe in continuous learning and problem-solving, and I’m always excited to take on new challenges and projects.</p>
+        </div>
+        <div class="right">
+            <img src="MyPic.png" alt="My Picture" class="mypic">
+        </div>
+    </section>
+
+    <br>
+    <hr>
+
+    <!--skills section-->
+    <section class="skills">
+        <h1>SKILLS</h1>
+        <br>
+
+        <div class="grid-container">
+            <div class="grid-box">
+                <b> <u> HTML </u> </b>
+                <p> Proficient in creating structured web pages with HTML. </p>
+            </div>
+
+            <div class="grid-box">
+                <b> <u> CSS </u> </b>
+                <p> Proficient in styling the structured web pages using CSS. </p>
+            </div>
+
+            <div class="grid-box">
+                <b> <u> JavaScript </u> </b>
+                <p> Good understanding of core JavaScript concepts for front-end development. </p>
+            </div>
+
+            <div class="grid-box">
+                <b> <u> Python/Java </u> </b>
+                <p> Basic knowledge of back-end languages like Python or Java </p>
+            </div>
+
+            <div class="grid-box">
+                <b> <u> Database Management </u> </b>
+                <p>Familiar with writing <b>basic SQL queries</b> to retrieve, update, and manage data in relational databases like MySQL.</p>
+                <p>Understanding of <b>database schema design</b> (like creating tables, defining relationships.)</p>
+                <p>Familiar with <b>connecting databases</b> to back-end servers using languages like PHP (with libraries like Laravel).</p>
+            </div>
+
+            <div class="grid-box">
+                <b> <u> Version Control </u> </b>
+                <p> <b>GIT</b> (Comfortable with core Git commands like commit, push, pull, and branching for version control.) </p>
+                <p><b>GitHub</b> (Familiarity with using GitHub for hosting repositories and collaborating on projects through pull requests and code reviews.)</p>
+            </div>
+
+            <div class="grid-box">
+                <b><u>Tools & Technologies</u></b>
+                <p> <b>VS Code</b> (Proficiency in using Visual Studio Code or any other IDE for development.)</p>
+                <p> <b>Command Line</b> (Basic command-line skills for navigation and development tasks.)</p>
+            </div>
+
+            <div class="grid-box">
+                <b><u>Soft Skills</u></b>
+                <p> <b>Problem-Solving</b> (Able to break down complex problems and cretaive solutions for efficient development.)</p>
+                <p> <b>Teamwork</b> (Ability to work effectively in teams, demonstrated through group projects or internships.)</p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <!--Project section-->
+    <section class="projects">
+        <h1>Projects</h1>
+        <br>
+        <div class="slider">
+            <div class="img-container">
+                <img src="projects/pro1.png" alt="" class="pr-img">
+                <img src="projects/pro2.png" alt="" class="pr-img">
+                <img src="projects/pro3.png" alt="" class="pr-img">
+                <img src="projects/pro4.png" alt="" class="pr-img">
+                <img src="projects/pro5.png" alt="" class="pr-img">
+            </div>
+        </div>
+    </section>
+
+    <br> <br>
+    <hr>
+    <br>
+
+    <!--CV download-->
+    <section class="cv">
+        <h2> <b>Download My CV</b> </h2> <br>
+        
+        <button class="download-btn" onclick="DownloadCv()">Download CV</button>
+    </section>
+
+    <!--Script for Downloading CV-->
+    <script>
+        function DownloadCv()
+        {
+            const link = document.createElement('a');
+            link.href = 'path of cv';
+            link.download = 'Vaishnavi_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link)
+        }
+    </script>
+
+    <br>
+    <hr>
+
+    <section class="connect">
+        <h2>
+            <b> Let's Connect</b>
+        </h2>
+        <br>
+        <p> Feel free to reach out if you’d like to connect, collaborate,or just chat about Developing!</p>
+        <p> <img src="./connect/linkedin.jpeg" alt="linked in logo" width="25"><a href="https://www.linkedin.com/in/vaishnavi-karakoti">LinkedIn</a> </p>
+        <p> <img src="./connect/gmail.jpeg" alt="gmaillogo" width="30"><a href="mailto:vaishnavikarakoti06@gmail.com">Send Me Email</a> </p></p>
+    </section>
+
+    <hr>
+
+    <!--Footer section-->
+    <footer>
+        &copy; 2024 Vaishnavi Karakoti. All right reserved.
+    </footer>
+
+</body>
+</html>
