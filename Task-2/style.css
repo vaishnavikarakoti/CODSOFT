@@ -1,0 +1,277 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(32, 160, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    width: 100px;
+    margin-left: 30px;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus
+{
+    list-style: none;
+    display: flex;
+    margin: 30px;
+    transition: all 0.3s;
+    font-size: 1.25rem;
+}
+
+.menus:hover
+{
+    color: purple;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+#touch
+{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#touch:hover
+{
+    color: purple;
+}
+
+.bio
+{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 65px;
+}
+
+.mypic, .left
+{
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.mypic
+{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.left
+{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 140px;
+    font-weight: 700;
+}
+
+#purple
+{
+    color: rgb(201, 12, 201);
+}
+
+#element
+{
+    color: rgb(201, 12, 201);
+}
+
+p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px;
+}
+
+hr
+{
+    width: 80%;
+    margin: auto;
+}
+
+.skills
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+h1
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid-box
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    background-color: lightgreen;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.projects
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.slider
+{
+    width: 80%;
+    height: auto;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.4);
+}
+
+.img-container
+{
+    display: flex;
+    width: 300%;
+    animation: slideFade 10s infinite;
+}
+
+@keyframes slideFade
+{
+    0% {transform: translateX(0); opacity: 1;}
+    50% {transform: translateX(-50%); opacity: 0.5;}
+    100% {transform: translateX(-100%); opacity: 1;}
+}
+
+.pr-img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide
+{
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.cv
+{
+    text-align: center;
+    margin: 20px;
+}
+
+.download-btn
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover
+{
+    background-color: #45a049;
+}
+
+.connect
+{
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-section h2
+{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.connect-section p
+{
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.connect-section img
+{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.connect-section a
+{
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect-section a:hover
+{
+    text-decoration: underline;
+}
+
+footer
+{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(32, 160, 203);
+}
+
+
+
